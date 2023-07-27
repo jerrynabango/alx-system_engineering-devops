@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Bash script that displays numbers from 1 to 100.
+
+bash=1
+while ((bash <= 100))
+do
+    # Displays FizzBuzz when the number is a multiple of 3 and 5
+    if ((bash % 15 == 0))
+    then
+        echo "FizzBuzz"
+
+    # Displays Fizz when the number is a multiple of 3
+    elif ((bash % 3 == 0))
+    then
+        echo "Fizz"
+
+    # Displays Buzz when the number is a multiple of 5
+    elif ((bash % 5 == 0))
+    then
+        echo "Buzz"
+
+    # Otherwise, displays the number
+    else
+        echo "$bash"
+    fi
+
+    ((bash++))  # Increment the bash variable by 1
+done
