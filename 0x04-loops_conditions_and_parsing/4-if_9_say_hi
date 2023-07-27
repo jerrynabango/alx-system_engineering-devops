@@ -1,21 +1,19 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times using while loop & if statement
-# For the 9th iteration, displays Best School and then Hi on a new line
 script="Best School"
 bash=1
 
 # le: Checks whether left-hand side operand is less than or equal to the right-hand side operand
 # It returns true (1) if the condition is met; otherwise, it returns false (0).
-while [ "$bash" -le 10 ]
+while [ "$bash" -le 10 ];
 do
-echo "$script"
+    echo "$script"
 
-# eq: comparison operator that checks whether two integers are equal.
-if [ "$bash" -eq 9 ]
-then
-echo "Hi"
-
-# fi: Indicates the end of if statement
-fi
-((bash++))
+    # eq: comparison operator that checks whether two integers are equal.
+    if [ "$bash" -eq 9 ];
+	then
+        echo "Hi"
+	# fi: Indicates the end of if statement
+    fi
+    ((bash++))
 done
