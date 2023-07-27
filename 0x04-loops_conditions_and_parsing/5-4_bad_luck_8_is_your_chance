@@ -3,8 +3,9 @@
 script="Best School"
 ((bash = 1 ))
 
-#lt: Indciates the script being executed is less than or == 10
-while [ "$bash" -lt 10 ]
+# le: Checks whether left-hand side operand is less than or equal to the right-hand side operand
+# It returns true (1) if the condition is met; otherwise, it returns false (0).
+while [ "$bash" -le 10 ]
 do
 
 # It displays "bad luck" for the 4th loop iteration
