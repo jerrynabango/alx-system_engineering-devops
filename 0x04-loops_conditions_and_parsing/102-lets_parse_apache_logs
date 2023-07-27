@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that displays the visitor IP along with the HTTP status code from the Apache log file..
+
+# awk: It reads input line by line and performs actions based on patterns and commands specified in script.
+# apache-access.log: Indicates input file containing data
+awk '{ print $1,$9 }' apache-access.log
