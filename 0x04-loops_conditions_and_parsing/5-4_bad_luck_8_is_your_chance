@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times using a while loop & if,else,elif statements
 script="Best School"
-bash=1
+((bash = 1 ))
 
 #lt: Indciates the script being executed is less than or == 10
 while [ "$bash" -lt 10 ]
