@@ -1,28 +1,24 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times using a while loop & if,else,elif statements
+# This script is displaying "Best School" 10 times using a while loop & if, else, elif statements
 script="Best School"
 bash=1
 
 # le: Checks whether left-hand side operand is less than or equal to the right-hand side operand
 # It returns true (1) if the condition is met; otherwise, it returns false (0).
-while [ "$bash" -le 10 ]
+while [ "$bash" -le 10 ];
 do
+    # It displays "bad luck" for the 4th loop iteration
+    if [ "$bash" -eq 4 ]; then
+        echo "bad luck"
 
-# It displays "bad luck" for the 4th loop iteration
-if [ "$bash" -eq 4 ]
-then
-echo "bad luck"
+    # It displays "good luck" for the 8th loop iteration
+    elif [ "$bash" -eq 8 ]; then
+        echo "good luck"
 
-# It displays "good luck" for the 8th loop iteration
-elif [ "$bash" -eq 8 ]
-then
-echo "good luck"
-
-# It displays "Best School" for the other iterations
-else
-echo "$script"
-
-# fi: Indicates the end of if statement
-fi
-((bash++))
+    # It displays "Best School" for the other iterations
+    else
+        echo "$script"
+	# fi: Indicates the end of if statement
+    fi
+    ((bash++))
 done
