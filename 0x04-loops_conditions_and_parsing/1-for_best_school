@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 script="Best School"
-for ((bash = 0; bash < 10; bash++))
+for ((bash = 0; bash < 10; bash++));
 do
-echo "Best School"
+echo "$script"
 done

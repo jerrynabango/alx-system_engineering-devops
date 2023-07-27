@@ -140,4 +140,29 @@ Try 'chmod --help' for more information.
 [?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ touch [7m0-RSA_public_key.pub[27m0-RSA_public_key.pub
 [?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ls
 [?2004l'='   0-RSA_public_key.pub   0-RSA_public_key.pub.pub   [0m[01;32m1-for_best_school[0m   README.md
-[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ chmod +x *.pub
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ls
+[?2004l'='   [0m[01;32m0-RSA_public_key.pub[0m   [01;32m0-RSA_public_key.pub.pub[0m   [01;32m1-for_best_school[0m   README.md
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ lschmod +x *.publs[Ktouch 0-RSA_public_key.publs[Kchmod +x *.pub[3P*.publs[Kssh keygen -t rsatouch 0-RSA_public_key.publs[Krm -rf *.publs[Ksudo apt install shellcheck[3Ptack install ShellCheck[12Pupdateudo apt install shellcheck[7Ppacman -S[C[C[C[C[C[C[C[C[C[C[Cshellcheck 1-for_best_school [1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10P./[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pgit pullls[Kgit pull./1-for_best_school 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add .
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git commit-[K -m "conditions and parsing"
+[?2004l[master 6d39291] conditions and parsing
+ 5 files changed, 153 insertions(+)
+ create mode 100755 0x04-loops_conditions_and_parsing/0-RSA_public_key.pub
+ create mode 100755 0x04-loops_conditions_and_parsing/0-RSA_public_key.pub.pub
+ create mode 100755 0x04-loops_conditions_and_parsing/1-for_best_school
+ create mode 100644 0x04-loops_conditions_and_parsing/=
+ create mode 100644 0x04-loops_conditions_and_parsing/README.md
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git push
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/
