@@ -3,7 +3,7 @@
 script="Best School"
 (( bash = 0 ))
 
-#lt: Indciates the script being executed is less than or == 10
+#gt: executes a block of code until the specified condition becomes true
 until [ $bash -gt 9 ];
 do
 echo "$script"
