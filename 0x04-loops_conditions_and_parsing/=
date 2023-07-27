@@ -60585,4 +60585,42 @@ website: https://www.shellcheck.net
 [?2004l[0m[01;34mAndroid[0m  [01;34mBetty[0m  [01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mS.E[0m  [01;34msnap[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34mvim[0m
 [?2004h]0;jerrynabango@jerry-nabango: ~[01;32mjerrynabango@jerry-nabango[00m:[01;34m~[00m$ lscd -S.E/jerrynabango/[8Phome//[K..shellcheck --versionudo cp shellcheck /usr/local/bin[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd shellcheck-v0.7.0/ls[Kwget -qO- https://github.com/koalaman/shellcheck/releases/download/v0.7.0/shellcheck-v0.7.0.linux.x86_64.tar.xz | tar -xJf -[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install shellcheck[Kwget -qO- https://github.com/koalaman/shellcheck/releases/download/v0.7.0/shellcheck-v0.7.0.linux.x86_64.tar.xz | tar -xJf -
 [?2004l[?2004h]0;jerrynabango@jerry-nabango: ~[01;32mjerrynabango@jerry-nabango[00m:[01;34m~[00m$ [7mcd shellcheck-v0.7.0/[27mcd shellcheck-v0.7.0/
-[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/shellcheck-v0.7.0[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/shellcheck-v0.7.0[00m$ [7msudo cp shellcheck /usr/local/bin[27msudo cp shellcheck /usr/loc
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/shellcheck-v0.7.0[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/shellcheck-v0.7.0[00m$ [7msudo cp shellcheck /usr/local/bin[27msudo cp shellcheck /usr/local/bin
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/shellcheck-v0.7.0[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/shellcheck-v0.7.0[00m$ sudo cp shellcheck /usr/local/bin[12Pcd shellcheck-v0.7.0/wget -qO- https://github.com/koalaman/shellcheck/releases/download/v0.7.0/shellcheck-v0.7.0.linux.x86_64.tar.xz | tar -xJf -[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd -S.E/jerrynabango/[8Phome//[K..shellcheck --versionudo cp shellcheck /usr/local/bin[13Phellcheck --version
+[?2004lShellCheck - shell script analysis tool
+version: 0.7.0
+license: GNU General Public License, version 3
+website: https://www.shellcheck.net
+[?2004h]0;jerrynabango@jerry-nabango: ~/shellcheck-v0.7.0[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/shellcheck-v0.7.0[00m$ cd ..
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~[01;32mjerrynabango@jerry-nabango[00m:[01;34m~[00m$ cd S.E/
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E[00m$ cd alx-system_engineering-devops/
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops[00m$ cd 0x04-loops_conditions_and_parsing/
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ls
+[?2004l'='   [0m[01;32m0-RSA_public_key.pub[0m   [01;32m0-RSA_public_key.pub.pub[0m   [01;32m1-for_best_school[0m   [01;32m2-while_best_school[0m   README.md
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ shellchce[K[Keck 2-while_best_school 
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./2-while_best_school 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./2-while_best_school [9@shellcheck [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ shellcheck 2-while_best_school [9P./[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add /[K.
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git commit -m "[7mWhile Best School loop[27mWhile Best School loop"
+[?2004l[master e392bbe] While Best
