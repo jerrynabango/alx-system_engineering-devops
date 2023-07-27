@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that groups visitors by IP and HTTP status code, and displays this data.
+
+# awk: It reads input line by line and performs actions based on patterns and commands specified in script.
+# apache-access.log: Indicates input file containing data
+# uniq: Avoid duplicate entries
+# sort: Ensure proper order of entries
+awk '{ print $1,$9 }' apache-access.log | sort | uniq -c | sort -nr
