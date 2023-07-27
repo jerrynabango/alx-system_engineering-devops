@@ -61533,4 +61533,41 @@ Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing obje
 Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.00 KiB | 1.00 MiB/s, done.
 Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
-To https://github.com/jerrynabango/alx-system_
+To https://github.com/jerrynabango/alx-system_engineering-devops.git
+   5718fb9..ceec2d8  master -> master
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./45[K[K4[K5-4_bad_luck_8_is_your_chance 
+[?2004lBest School
+Best School
+Best School
+bad luck
+Best School
+Best School
+Best School
+good luck
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./5-4_bad_luck_8_is_your_chance 
+[?2004lBest School
+Best School
+Best School
+bad luck
+Best School
+Best School
+Best School
+good luck
+Best School
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./5-4_bad_luck_8_is_your_chance git push[Kcommit -m "script loops from 1-10"add .[K
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add ../5-4_bad_luck_8_is_your_chance git push[Kcommit -m "script loops from 1-10"
+[?2004l[master da7fb7f] script loops from 1-10
+ 2 files changed, 49 insertions(+), 3 deletions(-)
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git commit -m "script loops from 1-10"add .[K./5-4_bad_luck_8_is_your_chance git push[K
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 806 bytes | 806.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/jerrynabango/alx-system_engineering-devops.git
+   ceec2d8..da7fb7f  master -> master
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ [K]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ touch [7m6-superstitious_numbers[27m

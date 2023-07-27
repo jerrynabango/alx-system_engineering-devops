@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times using a while loop & if,else,elif statements
 script="Best School"
-((bash = 1 ))
+bash=1
 
 # le: Checks whether left-hand side operand is less than or equal to the right-hand side operand
 # It returns true (1) if the condition is met; otherwise, it returns false (0).
