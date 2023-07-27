@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times using until loop
+# This script is displaying "Best School" 10 times using the until loop
 script="Best School"
 bash=0
 
-#gt: executes a block of code until the specified condition becomes true
+# gt: executes a block of code until the specified condition becomes true
 until [ $bash -gt 9 ];
 do
-echo "$script"
-(( bash++ ))
+    echo "$script"
+    ((bash++))
 done
