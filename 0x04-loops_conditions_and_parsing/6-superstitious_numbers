@@ -24,6 +24,5 @@ do
             ;;
 	# esc: Indicates the end of a case statement
     esac
-
     ((bash++))
 done
