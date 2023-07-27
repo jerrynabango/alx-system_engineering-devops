@@ -2,7 +2,8 @@
 # Bash script that displays numbers from 1 to 20
 bash=1
 
-while [ "$bash" -le 20 ]; do
+while [ "$bash" -le 20 ];
+do
     echo "$bash"
 
     case "$bash" in
@@ -21,6 +22,7 @@ while [ "$bash" -le 20 ]; do
         *)
             echo -n
             ;;
+	# esc: Indicates the end of a case statement
     esac
 
     ((bash++))
