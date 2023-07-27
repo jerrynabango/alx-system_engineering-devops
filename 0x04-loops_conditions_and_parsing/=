@@ -60942,4 +60942,86 @@ Best School
 Best School
 Best School
 Hi
-[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./4-if_9_say_hi 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./4-if_9_say_hi 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./4-if_9_say_hi 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./4-if_9_say_hi 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ ./4-if_9_say_hi 
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ shellcheck 4-if_9_say_hi 
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ shellcheck 4-if_9_say_hi 
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ shellcheck 4-if_9_say_hi [9P./[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lBest School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Best School
+Hi
+Best School
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add .
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git commit -m "using while *[K([K& if"
+[?2004l[master f7d2e6e] using while & if
+ 2 files changed, 251 insertions(+), 1 deletion(-)
+ mode change 100644 => 100755 0x04-loops_conditions_and_parsing/4-if_9_say_hi
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta comp
