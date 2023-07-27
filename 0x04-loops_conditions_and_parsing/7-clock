@@ -4,10 +4,10 @@ minute=1 hour=0
 
 # le: Checks whether left-hand side operand is less than or equal to the right-hand side operand
 # It returns true (1) if the condition is met; otherwise, it returns false (0).
-while [ $hour -le 12 ];
+while [ "$hour" -le 12 ];
 do
 	echo "Hour: $hour"
-	while [ $minute -le 59 ];
+	while [ "$minute" -le 59 ];
 	do
 		echo $minute
 		minute=$((minute+1))
