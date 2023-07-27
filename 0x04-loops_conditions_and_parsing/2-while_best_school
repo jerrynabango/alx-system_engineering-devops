@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times using while loop
+# This script is displaying "Best School" 10 times using a while loop
 script="Best School"
 bash=0
 
-#lt: Indciates the script being executed is less than or == 10
+# lt: Indicates that the script being executed is less than 10
 while [ $bash -lt 10 ];
 do
-echo "$script"
-(( bash++ ))
+    echo "$script"
+    ((bash++))
 done

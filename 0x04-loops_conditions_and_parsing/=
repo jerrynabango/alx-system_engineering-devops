@@ -61740,4 +61740,33 @@ Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3
 Total 9 (delta 7), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas:   0% (0/7)[Kremote: Resolving deltas:  14% (1/7)[Kremote: Resolving deltas:  28% (2/7)[Kremote: Resolving deltas:  42% (3/7)[Kremote: Resolving deltas:  57% (4/7)[Kremote: Resolving deltas:  71% (5/7)[Kremote: Resolving deltas:  85% (6/7)[Kremote: Resolving deltas: 100% (7/7)[Kremote: Resolving deltas: 100% (7/7), completed with 4 local objects.[K
 To https://github.com/jerrynabango/alx-system_engineering-devops.git
-   1a95c49..e65e6da  ma
+   1a95c49..e65e6da  master -> master
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add .
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git commit -m "using while & then"
+[?2004l[master a82bac9] using while & then
+ 2 files changed, 30 insertions(+), 12 deletions(-)
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.10 KiB | 1.10 MiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/jerrynabango/alx-system_engineering-devops.git
+   e65e6da..a82bac9  master -> master
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git add .
+[?2004l[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git p[Kcommit -m "usoing[K[K[K[King until loop"
+[?2004l[master 770a085] using until loop
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[01;32mjerrynabango@jerry-nabango[00m:[01;34m~/S.E/alx-system_engineering-devops/0x04-loops_conditions_and_parsing[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 397 bytes | 397.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/jerrynabango/alx-system_engineering-devops.git
+   a82bac9..770a085  master -> master
+[?2004h]0;jerrynabango@jerry-nabango: ~/S.E/alx-sys
