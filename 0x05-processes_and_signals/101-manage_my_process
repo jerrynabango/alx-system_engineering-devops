@@ -14,7 +14,7 @@ function start()
         echo "$!" > "$process";
 }
 
-# stop: Indicates the 
+# stop: Indicates the end of the process
 function stop()
 {
 	#kill: Used to send a SIGKILL signal to the process that is running the process/ Terminate process
