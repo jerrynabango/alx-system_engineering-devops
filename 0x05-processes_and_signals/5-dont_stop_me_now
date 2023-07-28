@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that stops 4-to_infinity_and_beyond process.
+
+# pgrep: Search for processes based on their names or attributes.
+# kill: Used to send a SIGKILL signal to the process that is running the process/ Terminate process
+pgrepkill -f 4-to_infinity_and_beyond
