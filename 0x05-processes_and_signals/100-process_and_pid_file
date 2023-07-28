@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Bash script that does the following
+
+#Creates the file /var/run/myscript.pid containing its PID
+echo "$$" > /var/run/myscript.pid
+
+while true
+do
+  #Displays To infinity and beyond indefinitely
+  echo "To infinity and beyond"
+
+  # sleep: Indicates the seconds to delay the process until it's completed successfully
+  sleep 2
+
+  #Displays Y U no love me?! when receiving a SIGINT signal
+  trap 'echo "Y U no love me?!"' SIGINT
+
+  #Displays I hate the kill command when receiving a SIGTERM signal
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+
+  trap 'terminator' SIGQUIT
+done
+
+# terminator: Performs the cleanup after execution of the script
+terminator()
+{
+  # rm: Removes the file
+  rm /var/run/myscript.pid
+  exit
+}
