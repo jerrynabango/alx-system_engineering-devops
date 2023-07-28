@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+# shellcheck disable=SC2009
+
+# ps: Displays information about currently running processes.
+# H: Displays relationship between parent   and child processes.
+# grep: Displays lines in the ps output that contain "bash"
+
+ps -auxH | grep bash
