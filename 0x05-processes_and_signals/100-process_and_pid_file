@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 # Bash script that does the following
 
+# terminator: Performs the cleanup after execution of the script
+terminator()
+{
+  # rm: Removes the file
+  rm /var/run/myscript.pid
+  exit
+}
+
 #Creates the file /var/run/myscript.pid containing its PID
 echo "$$" > /var/run/myscript.pid
 
@@ -20,11 +28,3 @@ do
 
   trap 'terminator' SIGQUIT
 done
-
-# terminator: Performs the cleanup after execution of the script
-terminator()
-{
-  # rm: Removes the file
-  rm /var/run/myscript.pid
-  exit
-}
