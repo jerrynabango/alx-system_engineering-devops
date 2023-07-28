@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that displays "To infinity and beyond" indefinitely using a while loop.
+
+while display=0;
+do
+    echo "To infinity and beyond"
+	# sleep: Indicates the seconds to delay the process until it's completed successfully
+    sleep 2
+    ((display++))
+done
