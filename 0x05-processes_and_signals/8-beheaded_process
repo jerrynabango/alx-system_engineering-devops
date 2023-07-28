@@ -4,4 +4,4 @@
 # pkill: Search processes based on their names or patterns and sends signals to processes to request them to terminate
 # It provides convenient way to stop processes without needing to manually find their Process Identification Numbers.
 # kill: Used to send a SIGKILL signal to the process that is running the process/ Terminate process
-pkill -f "7-highlande"
+pkill -SIGKILL -f "7-highlande"
