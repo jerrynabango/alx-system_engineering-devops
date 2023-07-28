@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Bash (init) script that manages manage_my_process. (both files need to be pushed to git)
+
+process="/var/run/my_process.pid"
+
+# start: Indicates start of process
+function start()
+{
+	# touch: Used to create a file
+	./manage_my_process &
+	sudo touch "$process";
+	# chown: Used to change the ownership of the process 
+        sudo chown "$USER":"$USER" "$process";
+        echo "$!" > "$process";
+}
+
+# stop: Indicates the 
+function stop()
+{
+	#kill: Used to send a SIGKILL signal to the process that is running the process/ Terminate process
+	# cat: Display output of a file
+	kill "$(cat "$process")"
+	#rm: Used to remove a file
+	sudo rm "$process"
+}
+
+if [ "$1" == "start" ]
+then
+	start
+	echo "manage_my_process started"
+
+elif [ "$1" == "stop" ]
+then
+	stop
+	echo "manage_my_process stopped"
+
+elif [ "$1" == "restart" ]
+then
+	stop && start
+	echo "manage_my_process restarted"
+
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+# fi: Indicates the end of if statement
+fi
