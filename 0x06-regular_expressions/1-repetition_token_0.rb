@@ -2,7 +2,7 @@
 
 # puts: Dislpays the searched list
 # /h, b & t: The chararacters to search
-# .: The chararacters to search apart of the new line
+# .: Search all the matching characters apart from newline characters
 # scan: searches the required characters in the search string
 # {2,5}: Matches at least 2 and at most 5 occurrences of the previous character or group.
 # join: Provides convenient join for the search string and returns the result
