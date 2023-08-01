@@ -1,6 +1,6 @@
 # A regular expression (regex or regexp) is a sequence of characters that defines a search pattern. It is a powerful tool used for string matching and manipulation in various programming languages and text editors.
 # Regular expressions allow you to find, replace, or validate strings based on specific patterns.
-# Metacharacters: These are special characters that have a specific meaning in regular expressions. Common metacharacters include:
+# Metacharacters: These are special characters that have a specific meaning in regular expressions. Most used metacharacters include:
 
 * . (dot): Matches any single character except newline.
 * *: Matches zero or more occurrences of the previous character.
