@@ -6,4 +6,4 @@
 # +: Matches one or more occurrences of the previous character(b).
 # join: Provides convenient join for the search string and returns the result
 
-puts ARGV[0].scan(/hb+tn/).join
+puts ARGV[0].scan(/hbt+n/).join
