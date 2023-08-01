@@ -9,4 +9,4 @@
 # $: Matches the end of a line.
 # join: Provides convenient join for the search string and returns the result
 
-puts ARGV[0].scan(^\d{10})$/.join
+puts ARGV[0].(/^(\d{10})$/).join
