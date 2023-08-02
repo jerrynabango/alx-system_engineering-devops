@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bash script that displays listening ports:
+# That only shows listening sockets
+# That shows the PID and name of the program to which each socket belongs
+
+# netstat:  It's used to display network statistics and information about network connections, routing tables, and network interfaces.
+# --listen or -l: filters output to show the listening network connections.
+# A listening connection:  Network port on which a program is waiting for incoming connections from other systems.
+# --program or -p: Displays process ID (PID) and name of the program associated with each network connection.
+# This allows you to identify which program is using a particular network connection.
+
+netstat --l --p
