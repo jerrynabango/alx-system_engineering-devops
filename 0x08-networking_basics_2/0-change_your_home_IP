@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Bash script that configures an Ubuntu server with the below requirements.
+# localhost resolves to 127.0.0.2
+# facebook.com resolves to 8.8.8.8.
+
+# cp: Copies files from the source directory to the intended destination directory
+# -e: Enables interpretation of escape sequences in the provided string.
+# >>: File redirection operator used to append output of the echo command to a file instead of displaying it on terminal.
+# \t: Indicates tab character for inserting horizontal tab
+# -f: Forces the copy to the destination directory
+
+cp /etc/hosts ~/hosts.new
+echo -e "127.0.0.2\tlocalhost" > ~/hosts.new
+echo -e "8.8.8.8\tfacebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
