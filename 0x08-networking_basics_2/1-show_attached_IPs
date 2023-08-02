@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Bash script that displays all active IPv4 IPs on the machine it’s executed on
+
+# ifconfig: display information about network interfaces on the system
+# grep: Displays lines in the output
+# . (dot): Matches any single character except newline.
+# cut: Extracts portion of the matched IP addresses from previous process
+# -b: Choose specific bytes from each line of input starting from the 6th byte.
+# It allows you to extract a range of bytes from a line of text based on their positions.
+# (): Creates a group, capturing or grouping parts of the regex pattern.
+# {n,m}: Matches at least n and at most m occurrences of the previous character or group.
+
+ifconfig | grep -Eo "inet ([0-9]{1,3}\.){3,3}[0-9]{1,3}" | cut -b 6-
