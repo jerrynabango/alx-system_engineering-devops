@@ -6,4 +6,4 @@
 # localhost: It refers to the local device or computer used to access itself. 
 # 98: Port number which the server will listen for the incoming connections.
 
-netcat -l localhost 98
+nc -l localhost 98
