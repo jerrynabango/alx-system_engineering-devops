@@ -2,5 +2,5 @@
 # Nginx likes port 80
 
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
 rm -rf /var/run/nginx.pid
+service nginx start
