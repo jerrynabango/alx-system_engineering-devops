@@ -1,7 +1,20 @@
 # Install Nginx web server (w/ Puppet)
+
+exec { 'apt-get update':
+  command => '/usr/bin/apt-get -y update',
+}
+
 package { 'nginx':
   ensure  => 'installed',
   require => Exec['apt-get update'],
+}
+
+file_line { 'redirect':
+  path    => '/etc/nginx/sites-available/default',
+  after   => 'server_name _;',
+  line    => 'rewrite ^/redirect_me https://www.google.com permanent;',
+  notify  => Service['nginx'],
+  require => Package['nginx'],
 }
 
 file { 'index-html':
@@ -10,14 +23,7 @@ file { 'index-html':
   content => 'Hello World!',
 }
 
-file_line { 'aaaaa':
-  ensure => 'present',
-  path   => '/etc/nginx/sites-available/default',
-  after  => 'listen 80 default_server;',
-  line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
-}
-
 service { 'nginx':
-  ensure  => running,
-  require => Package['nginx'],
+  ensure => running,
+  enable => true,
 }
