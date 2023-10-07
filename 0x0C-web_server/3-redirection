@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configure nginx
+# configure nginxredirection
 
 apt-get update
 apt-get -y install nginx
@@ -15,5 +15,4 @@ printf %s "server {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
 }" > /etc/nginx/sites-available/default
-
 service nginx restart
