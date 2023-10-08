@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Credentials
+
+eval $("ssh-agent")
+ssh-add /home/jerrynabango/.ssh
+
+# web-01 ip
+ssh ubuntu@54.160.82.9
+
