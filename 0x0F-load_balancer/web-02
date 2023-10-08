@@ -2,8 +2,7 @@
 # Credentials
 
 eval $("ssh-agent")
-ssh-add /home/jerrynabango/.ssh
+ssh-add /home/jerrynabango/.ssh/id_rsa
 
 # web-02 ip
 ssh ubuntu@100.25.3.186
-
