@@ -1,4 +1,4 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
 # Uncomplicated Firewall configuration
 
 sudo apt install ufw
