@@ -6,11 +6,8 @@ Export to CSV
 import sys
 import requests
 
-import requests
-import sys
 
-
-def export_to_csv(uid):
+def csv(uid):
     """
     Records all tasks that are owned by this employee
     """
@@ -25,4 +22,4 @@ def export_to_csv(uid):
 
 
 if __name__ == "__main__":
-    export_to_csv(sys.argv[1])
+    csv(sys.argv[1])
