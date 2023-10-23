@@ -7,14 +7,15 @@ import sys
 import requests
 
 
-def export_to_csv(uid):
+def data(uid):
     """
     Records all tasks that are owned by this employee
     """
     base = "https://jsonplaceholder.typicode.com/"
     user = requests.get(base + "users/" + uid).json()
     userTodos = requests.get(base + "todos", params={"userId": uid}).json()
-    with open("{}.csv".format(uid), 'w', encoding="utf-8") as w:
+
+    with open("{}.csv".format(uid), 'w') as w:
         for _ in userTodos:
             row = '"{}","{}","{}","{}"\n'.format(
                 uid, user.get("username"), _.get("completed"), _.get("title"))
@@ -22,4 +23,4 @@ def export_to_csv(uid):
 
 
 if __name__ == "__main__":
-    export_to_csv(sys.argv[1])
+    data(sys.argv[1])
