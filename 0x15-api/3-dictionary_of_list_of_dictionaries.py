@@ -8,13 +8,13 @@ import requests
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
-    employees = requests.get(url + "employees").json()
-    with open("todo_all_employees.json", 'w') as jsonfile:
+    users = requests.get(url + "users").json()
+    with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
-            a.get("id"): [{
-                "task": a.get("title"),
-                "completed": a.get("completed"),
-                "username": a.get("username")
-            } for a in requests.get(url + "todos",
-                                    params={"userId": a.get("id")}).json()]
-            for a in employees}, jsonfile)
+            u.get("id"): [{
+                "task": t.get("title"),
+                "completed": t.get("completed"),
+                "username": u.get("username")
+            } for t in requests.get(url + "todos",
+                                    params={"userId": u.get("id")}).json()]
+            for u in users}, jsonfile)
