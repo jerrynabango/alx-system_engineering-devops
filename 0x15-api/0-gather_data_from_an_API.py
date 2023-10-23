@@ -14,10 +14,10 @@ def data(uid):
     """
     base = "https://jsonplaceholder.typicode.com/"
     user = requests.get(base + "users/" + uid).json()
-    todos = requests.get(base + "todos", params={"userId": uid}).json()
-    completed = [_.get("title") for _ in todos if _.get("completed")]
+    userTodos = requests.get(base + "todos", params={"userId": uid}).json()
+    completed = [_.get("title") for _ in userTodos if _.get("completed")]
     output = "Employee {} is done with tasks({}/{}):".format(
-        user.get("name"), len(completed), len(todos))
+        user.get("name"), len(completed), len(userTodos))
     print("\n\t ".join([output] + completed))
 
 
