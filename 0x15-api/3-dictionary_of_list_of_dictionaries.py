@@ -12,9 +12,9 @@ if __name__ == "__main__":
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
             all.get("id"): [{
-                "task": t.get("title"),
-                "completed": t.get("completed"),
+                "task": e.get("title"),
+                "completed": e.get("completed"),
                 "username": all.get("username")
-            } for t in requests.get(url + "todos",
+            } for e in requests.get(url + "todos",
                                     params={"userId": all.get("id")}).json()]
             for all in users}, jsonfile)
