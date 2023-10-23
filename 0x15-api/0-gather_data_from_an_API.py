@@ -15,10 +15,10 @@ def employee_info(uid):
     base = "https://jsonplaceholder.typicode.com/"
     employee = requests.get(base + "users/" + uid).json()
     read_data = requests.get(base + "todos", params={"userId": uid}).json()
-    completed = [_.get("title") for _ in read_data if _.get("completed")]
+    information = [_.get("title") for _ in read_data if _.get("information")]
     details = "Employee {} is done with tasks({}/{}):".format(
-        employee.get("name"), len(completed), len(read_data))
-    print("\n\t ".join([details] + completed))
+        employee.get("name"), len(information), len(read_data))
+    print("\n\t ".join([details] + information))
 
 
 if __name__ == "__main__":
