@@ -7,7 +7,7 @@ import sys
 import requests
 
 
-def data(uid):
+if __name__ == "__main__":
     """
     Python script that, using this REST API, for a given employee ID,
     returns information about his/her TODO list progress.
@@ -19,7 +19,3 @@ def data(uid):
     output = "Employee {} is done with tasks({}/{}):".format(
         user.get("name"), len(completed), len(userTodos))
     print("\n\t ".join([output] + completed))
-
-
-if __name__ == "__main__":
-    data(sys.argv[1])
