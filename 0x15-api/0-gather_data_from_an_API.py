@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Python script that, using this REST API, for a given employee ID,
-returns information about his/her TODO list progress.
+Gather data from an API
 """
 
 import sys
@@ -19,7 +18,7 @@ def data(uid):
     completed = [_.get("title") for _ in todos if _.get("completed")]
     print("Employee {} is done with tasks({}/{}):".format(
         user.get("name"), len(completed), len(todos)))
-    [print("\t {}".format(c)) for c in completed]
+    [print("\t {}".format(complete)) for complete in completed]
 
 
 if __name__ == "__main__":
