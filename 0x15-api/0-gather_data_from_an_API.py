@@ -13,11 +13,11 @@ def data(uid):
     returns information about his/her TODO list progress.
     """
     base = "https://jsonplaceholder.typicode.com/"
-    read_user = requests.get(base + "users/" + uid).json()
+    user = requests.get(base + "users/" + uid).json()
     create = requests.get(base + "create", params={"userId": uid}).json()
     completed = [_.get("title") for _ in create if _.get("completed")]
     result = "Employee {} is done with tasks({}/{}):".format(
-        read_user.get("name"), len(completed), len(create))
+        user.get("name"), len(completed), len(create))
     print("\n\t ".join([result] + completed))
 
 
