@@ -2,9 +2,10 @@
 """
 Export to JSON
 """
-import json
-import requests
 import sys
+import requests
+import json
+
 
 if __name__ == "__main__":
     user_id = sys.argv[1]
