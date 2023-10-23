@@ -7,14 +7,14 @@ import json
 import requests
 
 if __name__ == "__main__":
-    url = "https://jsonplaceholder.typicode.com/"
-    employees = requests.get(url + "employees").json()
+    base = "https://jsonplaceholder.typicode.com/"
+    users = requests.get(base + "users").json()
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
             all.get("id"): [{
                 "task": e.get("title"),
                 "completed": e.get("completed"),
                 "username": all.get("username")
-            } for e in requests.get(url + "todos",
+            } for e in requests.get(base + "todos",
                                     params={"userId": all.get("id")}).json()]
-            for all in employees}, jsonfile)
+            for all in users}, jsonfile)
