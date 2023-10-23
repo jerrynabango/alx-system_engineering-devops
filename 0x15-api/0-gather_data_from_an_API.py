@@ -7,7 +7,7 @@ import sys
 import requests
 
 
-def get(uid):
+def get_data(uid):
     """
     Python script that, using this REST API, for a given employee ID,
     returns information about his/her TODO list progress.
@@ -22,4 +22,4 @@ def get(uid):
 
 
 if __name__ == "__main__":
-    get(sys.argv[1])
+    get_data(sys.argv[1])
