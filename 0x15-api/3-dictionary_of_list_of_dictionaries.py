@@ -8,7 +8,7 @@ import requests
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
-    users = requests.get(url + "users").json()
+    employees = requests.get(url + "employees").json()
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
             all.get("id"): [{
@@ -17,4 +17,4 @@ if __name__ == "__main__":
                 "username": all.get("username")
             } for e in requests.get(url + "todos",
                                     params={"userId": all.get("id")}).json()]
-            for all in users}, jsonfile)
+            for all in employees}, jsonfile)
