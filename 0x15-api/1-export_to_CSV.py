@@ -22,4 +22,4 @@ def export_to_csv(uid):
 
 
 if __name__ == "__main__":
-        export_to_csv(sys.argv[1])
+    export_to_csv(sys.argv[1])
