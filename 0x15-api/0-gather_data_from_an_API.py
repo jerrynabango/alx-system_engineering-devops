@@ -22,4 +22,4 @@ def data(uid):
 
 
 if __name__ == "__main__":
-    data(sys.argv[0])
+    data(sys.argv[1])
