@@ -18,7 +18,7 @@ def data(uid):
     completed = [_.get("title") for _ in todos if _.get("completed")]
     print("Employee {} is done with tasks({}/{}):".format(
         user.get("name"), len(completed), len(todos)))
-    [print("\t {}".format(complete)) for complete in completed]
+    [print("\t {}".format(c)) for c in completed]
 
 
 if __name__ == "__main__":
