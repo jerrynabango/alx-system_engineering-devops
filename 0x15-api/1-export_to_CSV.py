@@ -1,26 +1,17 @@
 #!/usr/bin/python3
 """
-Export to CSV
+Records all tasks that are owned by this employee
 """
 
 import sys
 import requests
 
-
-def employee_data(uid):
-    """
-    extend your Python script to export data in the CSV format.
-    """
-    base = "https://jsonplaceholder.typicode.com/"
-    user = requests.get(base + "users/" + uid).json()
-    userTodos = requests.get(base + "todos", params={"userId": uid}).json()
-
-    with open("{}.csv".format(uid), 'w') as w:
-        for _ in userTodos:
-            row = '"{}","{}","{}","{}"\n'.format(
-                uid, user.get("username"), _.get("completed"), _.get("title"))
-            w.write(row)
-
-
 if __name__ == "__main__":
-    employee_data(sys.argv[0])
+    url = "https://jsonplaceholder.typicode.com/"
+    user = requests.get(url + "users/{}".format(sys.argv[1])).json()
+    todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
+
+    completed = [t.get("title") for t in todos if t.get("completed") is True]
+    print("Employee {} is done with tasks({}/{}):".format(
+        user.get("name"), len(completed), len(todos)))
+    [print("\t {}".format(c)) for c in completed]
