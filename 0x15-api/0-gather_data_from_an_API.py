@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 """
-Gather data from an API.
+Python script that, using the JSON PLACEHOLDER API,
+for a given employee ID, returns information about his/her TODO list progress
 """
-
-import sys
 import requests
+import sys
 
 
-def data(uid):
+def get_data_from_api(uid):
     """
-    Python script that, using this REST API, for a given employee ID,
-    returns information about his/her TODO list progress.
+    Gets and prints data from JSON PLACEHOLDER API
+    Args:
+        uid: employee id
+    Return:
+        None
     """
     base = "https://jsonplaceholder.typicode.com/"
     user = requests.get(base + "users/" + uid).json()
@@ -22,4 +25,4 @@ def data(uid):
 
 
 if __name__ == "__main__":
-    data(sys.argv[1])
+    get_data_from_api(sys.argv[1])
