@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Export to CSV
+Export to CSV.
 """
 
 import sys
