@@ -13,11 +13,12 @@ def data(uid):
     """
     base = "https://jsonplaceholder.typicode.com/"
     employee = requests.get(base + "users/" + uid).json()
-    Todos = requests.get(base + "todos", params={"userId": uid}).json()
+    read_data = requests.get(base + "todos", params={"userId": uid}).json()
     with open("{}.csv".format(uid), 'w') as w:
-        for _ in Todos:
+        for _ in read_data:
             row = '"{}","{}","{}","{}"\n'.format(
-                uid, employee.get("username"), _.get("completed"), _.get("title"))
+                uid, employee.get("username"), _.get("completed"),
+                _.get("title"))
             w.write(row)
 
 
