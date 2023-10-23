@@ -8,7 +8,7 @@ import requests
 import sys
 
 
-def data_export():
+if __name__ == "__main__":
     user_id = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/"
     read_data = requests.get(url + "users/{}".format(user_id)).json()
@@ -20,7 +20,3 @@ def data_export():
                 "completed": do.get("completed"),
                 "username": username
             } for do in read_data]}, jsonfile)
-
-
-if __name__ == "__main__":
-    data_export(sys.arg[1])
