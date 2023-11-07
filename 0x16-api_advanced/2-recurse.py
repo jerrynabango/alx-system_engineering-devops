@@ -12,10 +12,10 @@ def recurse(subreddit, hot_list=[]):
     articles for a given subreddit, else return None.
     """
     global after
-    user_agent = {'User-Agent': 'api_advanced-project'}
+    headers = {'User-Agent': 'api_advanced-project'}
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     parameters = {'after': after}
-    results = requests.get(url, params=parameters, headers=user_agent,
+    results = requests.get(url, params=parameters, headers=headers,
                            allow_redirects=False)
 
     if results.status_code == 200:
