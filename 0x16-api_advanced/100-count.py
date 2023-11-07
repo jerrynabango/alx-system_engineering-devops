@@ -24,16 +24,17 @@ def count_words(subreddit, word_list, after=None, sort=True):
             titles += count_words(subreddit,
                                   word_list, after=after, sort=False)
         if sort is True:
-            count = {key.lower(): 0 for key in word_list}
+            articles = {k.lower(): 0 for k in word_list}
             for title in titles:
-                count = {key: value + title.lower().split().count(key)
-                         for key, value in count.items()}
-            count = {key: value for key, value in count.items() if value > 0}
-            if len(count):
-                word_list = [word.lower() for word in word_list]
-                count = {key: value * word_list.count(key)
-                         for key, value in count.items()}
-                count = sorted(count.items(), key=lambda kv: (-kv[1], kv[0]))
-                [print("{}: {}".format(key, value)) for key, value in count]
+                articles = {k: v + title.lower().split().articles(k)
+                            for k, v in articles.items()}
+            articles = {k: v for k, v in articles.items() if v > 0}
+            if len(articles):
+                word_list = [w.lower() for w in word_list]
+                articles = {k: v * word_list.articles(k)
+                            for k, v in articles.items()}
+                articles = sorted(articles.items(),
+                                  key=lambda kv: (-kv[1], kv[0]))
+                [print("{}: {}".format(k, v)) for k, v in articles]
         else:
             return titles
