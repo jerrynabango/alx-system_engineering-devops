@@ -20,12 +20,12 @@ def count_words(subreddit, word_list, after=None, sort=True):
         worddict (dict) || None if subreddit is invalid
     """
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
-    parameter = {'after': after, 'limit': 100}
+    params = {'after': after, 'limit': 100}
     custom = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
-    req = requests.get(url=url,
-                       parameter=parameter, custom=custom, allow_redirects=False)
-    if req.status_code == 200:
-        response = req.json()
+    result = requests.get(url=url,
+                       params=params, custom=custom, allow_redirects=False)
+    if result.status_code == 200:
+        response = result.json()
         titles = [child['data']['title']
                   for child in response['data']['children']]
         after = response['data']['after']
