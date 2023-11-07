@@ -12,9 +12,9 @@ def number_of_subscribers(subreddit):
     """
     number_subscribers = 0
 
-    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
+    custom = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    request = requests.get(url=url, headers=headers, allow_redirects=False)
+    request = requests.get(url=url, custom=custom, allow_redirects=False)
 
     if request.status_code == 200:
         response = request.json()
