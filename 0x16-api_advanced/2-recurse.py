@@ -12,20 +12,18 @@ def recurse(subreddit, hot_list=[]):
     if not subreddit or not isinstance(subreddit, str):
         return None
 
-    custom = {'User-Agent': 'custom-api/1.0 by MyName'}
-    parameter = {'after': after, 'limit': 100}
-    url = f'https://www.reddit.com/r/{subreddit}/hot.json'
-    response = requests.get(url, parameter=parameter, custom=custom,
-                            allow_redirects=False)
+    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
+    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    params = {'after': after, 'limit': 100}
+    req = requests.get(url, params=params,
+                       headers=headers, allow_redirects=False)
 
-    if response.status_code == 200:
-        data = response.json()
-        hot_articles = data.get('data', {}).get('children', [])
-        hot_list = [post['data']['title'] for post in hot_articles]
-
-        after = data.get('data', {}).get('after')
-        if after:
-            hot_list += recurse(subreddit, after)
+    if req.status_code == 200:
+        response = req.json()
+        hot_list = [child['data']['title']
+                    for child in response['data']['children']]
+        after = response['data']['after']
+        if after is not None:
+            hot_list += recurse(subreddit, after=after)
         return hot_list
-
     return None
