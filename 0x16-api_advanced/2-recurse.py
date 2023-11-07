@@ -24,8 +24,8 @@ def recurse(subreddit, hot_list=[]):
         if list is not None:
             after = list
             recurse(subreddit, hot_list)
-        all_titles = results.json().get("data").get("children")
-        for title_ in all_titles:
+        titles = results.json().get("data").get("children")
+        for title_ in titles:
             hot_list.append(title_.get("data").get("title"))
         return hot_list
     else:
