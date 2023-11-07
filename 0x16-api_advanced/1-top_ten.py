@@ -9,14 +9,15 @@ def top_ten(subreddit):
     Function that queries Reddit API & prints the titles of the first 10
     hot posts listed for a given subreddit.
     """
+    headers = {'User-Agent': 'advanced-api/0.0.1 by User'}
+    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    request = requests.get(url=url, headers=headers, allow_redirects=False)
 
-    top_posts = 0
-    custom = {'User-Agent': 'custom-api/1.0 by MyName'}
-    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    response = requests.get(url, custom=custom, allow_redirects=False)
-
-    if response.status_code == 200:
-        data = response.json()
-        top_posts = data['data']['subscribers']
-
-    return top_posts
+    if request.status_code == 200:
+        response = request.json()
+        titles_article = [child['data']['title']
+                  for child in response['data']['children'][:10]]
+        for title in titles_article:
+            print(title)
+    else:
+        print(None)
