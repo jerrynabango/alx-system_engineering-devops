@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-Defines a function that queries Reddit API
-"""
+"""Count Keywords"""
+
 import requests
 
 
@@ -9,23 +8,15 @@ def count_words(subreddit, word_list, after=None, sort=True):
     """
     Queries the Reddit API, parses the title of all hot articles,
     and prints a sorted count of given keywords (case-insensitive, delimited
-    by spaces. Javascript should count as javascript, but java should not)
-    Ags:
-        subreddit (str): name of subreddit
-        word_list (list): keywords to look out for
-        after (str): identifier of the last item on a listing
-        worddict (dict): results to be returned
-        ctr (int): condition to convert word_list to worddict
-    Returns:
-        worddict (dict) || None if subreddit is invalid
+    by spaces.
     """
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     params = {'after': after, 'limit': 100}
-    custom = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
-    result = requests.get(url=url,
-                       params=params, custom=custom, allow_redirects=False)
-    if result.status_code == 200:
-        response = result.json()
+    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
+    req = requests.get(url=url,
+                       params=params, headers=headers, allow_redirects=False)
+    if req.status_code == 200:
+        response = req.json()
         titles = [child['data']['title']
                   for child in response['data']['children']]
         after = response['data']['after']
