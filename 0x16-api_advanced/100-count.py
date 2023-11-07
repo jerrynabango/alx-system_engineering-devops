@@ -21,9 +21,9 @@ def count_words(subreddit, word_list, after=None, sort=True):
     """
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     parameter = {'after': after, 'limit': 100}
-    custom = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
+    headers = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
     result = requests.get(url=url,
-                       parameter=parameter, custom=custom, allow_redirects=False)
+                       parameter=parameter, headers=headers, allow_redirects=False)
     if result.status_code == 200:
         response = result.json()
         titles = [child['data']['title']
