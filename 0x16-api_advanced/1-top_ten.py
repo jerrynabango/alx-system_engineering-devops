@@ -4,7 +4,7 @@
 import requests
 
 
-def fetch_subreddit_subscribers(subreddit_name):
+def top_ten(subreddit):
     """
     Function that queries Reddit API & prints the titles of the first 10
     hot posts listed for a given subreddit.
