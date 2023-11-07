@@ -21,11 +21,11 @@ def count_words(subreddit, word_list, after=None, sort=True):
     """
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     parameter = {'after': after, 'limit': 100}
-    headers = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
-    result = requests.get(url=url,
-                       parameter=parameter, headers=headers, allow_redirects=False)
-    if result.status_code == 200:
-        response = result.json()
+    custom = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
+    req = requests.get(url=url,
+                       parameter=parameter, custom=custom, allow_redirects=False)
+    if req.status_code == 200:
+        response = req.json()
         titles = [child['data']['title']
                   for child in response['data']['children']]
         after = response['data']['after']
