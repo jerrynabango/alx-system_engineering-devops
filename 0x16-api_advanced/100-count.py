@@ -10,13 +10,13 @@ def count_words(subreddit, word_list, after=None, sort=True):
     and prints a sorted count of given keywords (case-insensitive, delimited
     by spaces.
     """
+    custom = {'User-Agent': 'advanced-api/0.0.1 by Mendy'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     params = {'after': after, 'limit': 100}
-    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
-    req = requests.get(url=url,
-                       params=params, headers=headers, allow_redirects=False)
-    if req.status_code == 200:
-        response = req.json()
+    result = requests.get(url=url,
+                          params=params, custom=custom, allow_redirects=False)
+    if result.status_code == 200:
+        response = result.json()
         titles = [child['data']['title']
                   for child in response['data']['children']]
         after = response['data']['after']
