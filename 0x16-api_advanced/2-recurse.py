@@ -12,12 +12,11 @@ def recurse(subreddit, hot_list=[]):
     if not subreddit or not isinstance(subreddit, str):
         return None
 
-    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     params = {'after': after, 'limit': 100}
+    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     req = requests.get(url, params=params,
                        headers=headers, allow_redirects=False)
-
     if req.status_code == 200:
         response = req.json()
         hot_list = [child['data']['title']
