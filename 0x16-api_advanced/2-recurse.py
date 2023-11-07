@@ -1,28 +1,32 @@
 #!/usr/bin/python3
-"""Recursing through the directory tree and collecting all files"""
+"""recursion"""
 
 import requests
 
 
-def recurse(subreddit, hot_list=[]):
+def get_hot_titles(subreddit, after=None):
     """
-    Function that queries the Reddit API & returns  a list containing the title
-    of all hot articles for a given subreddit, else returns None.
+    Queries the Reddit API and returns a list containing
+    the titles of all hot articles for a given subreddit.
     """
     if not subreddit or not isinstance(subreddit, str):
         return None
 
-    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    url = f'https://www.reddit.com/r/{subreddit}/hot.json'
     params = {'after': after, 'limit': 100}
-    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
-    req = requests.get(url, params=params,
-                       headers=headers, allow_redirects=False)
-    if req.status_code == 200:
-        response = req.json()
-        hot_list = [child['data']['title']
-                    for child in response['data']['children']]
-        after = response['data']['after']
-        if after is not None:
-            hot_list += recurse(subreddit, after=after)
-        return hot_list
+    headers = {'User-Agent': 'custom-api/1.0 by MyName'}
+
+    response = requests.get(url, params=params, headers=headers, allow_redirects=False)
+
+    if response.status_code == 200:
+        data = response.json()
+        post_data = data.get('data', {}).get('children', [])
+        hot_titles = [post['data']['title'] for post in post_data]
+
+        after = data.get('data', {}).get('after')
+        if after:
+            hot_titles += get_hot_titles(subreddit, after)
+
+        return hot_titles
+
     return None
