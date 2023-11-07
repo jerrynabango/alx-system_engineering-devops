@@ -11,10 +11,10 @@ def top_ten(subreddit):
     """
     headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
-    request = requests.get(url=url, headers=headers, allow_redirects=False)
+    req = requests.get(url=url, headers=headers, allow_redirects=False)
 
-    if request.status_code == 200:
-        response = request.json()
+    if req.status_code == 200:
+        response = req.json()
         titles = [child['data']['title']
                   for child in response['data']['children'][:10]]
         for title in titles:
