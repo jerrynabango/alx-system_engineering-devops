@@ -12,7 +12,7 @@ def top_ten(subreddit):
 
     top_posts = 0
     custom = {'User-Agent': 'custom-api/1.0 by MyName'}
-    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit_name)
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     response = requests.get(url, custom=custom, allow_redirects=False)
 
     if response.status_code == 200:
