@@ -9,8 +9,8 @@ def top_ten(subreddit):
     Function that queries Reddit API & prints the titles of the first 10
     hot posts listed for a given subreddit.
     """
-    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
+    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     req = requests.get(url=url, headers=headers, allow_redirects=False)
 
     if req.status_code == 200:
