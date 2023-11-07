@@ -12,11 +12,11 @@ def count_words(subreddit, word_list, after=None, sort=True):
     if not subreddit or not isinstance(subreddit, str):
         return None
 
-    custom = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
+    headers = {'User-Agent': 'advanced-api/0.0.1 by MyName'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     parameter = {'after': after, 'limit': 100}
     response = requests.get(url=url, parameter=parameter,
-                            custom=custom, allow_redirects=False)
+                            headers=headers, allow_redirects=False)
     if response.status_code == 200:
         response = response.json()
         title_articles = [child['data']['title']
