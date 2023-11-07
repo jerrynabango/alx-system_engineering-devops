@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Top Ten tiles"""
+"""Top Ten titles"""
 
 import requests
 
@@ -10,13 +10,13 @@ def fetch_subreddit_subscribers(subreddit_name):
     hot posts listed for a given subreddit.
     """
 
-    subscriber_count = 0
+    top_posts = 0
     custom = {'User-Agent': 'custom-api/1.0 by MyName'}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit_name)
     response = requests.get(url, custom=custom, allow_redirects=False)
 
     if response.status_code == 200:
         data = response.json()
-        subscriber_count = data['data']['subscribers']
+        top_posts = data['data']['subscribers']
 
-    return subscriber_count
+    return top_posts
