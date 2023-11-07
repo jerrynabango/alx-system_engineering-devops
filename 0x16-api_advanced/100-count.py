@@ -12,8 +12,8 @@ def count_words(subreddit, word_list, after=None, sort=True):
     """
     user_agent = {'User-Agent': 'api_advanced'}
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
-    parameter = {'after': after, 'limit': 100}
-    result = requests.get(url=url, parameter=parameter, headers=user_agent,
+    params = {'after': after, 'limit': 100}
+    result = requests.get(url=url, params=params, headers=user_agent,
                           allow_redirects=False)
     if result.status_code == 200:
         response = result.json()
@@ -24,17 +24,18 @@ def count_words(subreddit, word_list, after=None, sort=True):
             titles += count_words(subreddit,
                                   word_list, after=after, sort=False)
         if sort is True:
-            articles = {k.lower(): 0 for k in word_list}
+            articles = {key.lower(): 0 for key in word_list}
             for title in titles:
-                articles = {k: v + title.lower().split().articles(k)
-                            for k, v in articles.items()}
-            articles = {k: v for k, v in articles.items() if v > 0}
+                articles = {key: value + title.lower().split().articles(key)
+                            for key, value in articles.items()}
+            articles = {key: value for key, value in articles.items()
+                        if value > 0}
             if len(articles):
                 word_list = [w.lower() for w in word_list]
-                articles = {k: v * word_list.articles(k)
-                            for k, v in articles.items()}
+                articles = {key: value * word_list.articles(key)
+                            for key, value in articles.items()}
                 articles = sorted(articles.items(),
                                   key=lambda kv: (-kv[1], kv[0]))
-                [print("{}: {}".format(k, v)) for k, v in articles]
+                [print("{}: {}".format(key, value)) for key, value in articles]
         else:
             return titles
